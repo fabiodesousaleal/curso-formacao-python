@@ -4,7 +4,7 @@ numero_secreto=42
 total_tentativa=3
 
 for rodada in range(1, total_tentativa+1):
-    print("Tentativa {} de {}".format(rodada, total_tentativa))
+    print("Tentativa {} de {:07d}".format(rodada, total_tentativa))
     chute_str=input("Digite um número entre 1 e 100: ")
 
     print("Você digitou: ", chute_str)
@@ -20,7 +20,7 @@ for rodada in range(1, total_tentativa+1):
     menor = chute < numero_secreto
 
     if(acertou):
-        print("Você acertou!")
+        print(f"Você acertou! {numero_secreto} é seu número da sorte!'")
         break
 
     else:
